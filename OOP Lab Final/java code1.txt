@@ -1,0 +1,17 @@
+public class ShapeTest {
+    public static void main(String[] args) {
+        Circle circle = new Circle(5.0);
+        Rectangle rectangle = new Rectangle(4.0, 6.0);
+
+        System.out.println("Circle Area: " + circle.area());
+        circle.draw();
+
+        System.out.println("\nRectangle Area: " + rectangle.area());
+        rectangle.draw();
+
+        System.out.println("\n--- Explanation ---");
+        System.out.println("Abstract Class (Shape): Used because Circle and Rectangle share common behavior (area calculation).");
+        System.out.println("Interface (Drawable): Used because drawing is an optional behavior that can be implemented differently.");
+        System.out.println("Both mechanisms allow polymorphism and code reusability.");
+    }
+}
